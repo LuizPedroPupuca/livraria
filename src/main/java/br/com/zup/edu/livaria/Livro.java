@@ -15,7 +15,7 @@ public class Livro {
     @NotNull
     private String titulo;
 
-    @Column(unique = true) @ISBN(type = ISBN.Type.ANY)
+    @Column(unique = true)
     private String isbn;
 
     @NotNull

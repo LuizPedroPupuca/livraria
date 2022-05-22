@@ -14,10 +14,12 @@ public class LivroRequest {
     @NotBlank
     private String titulo;
 
+    @ISBN
     @NotBlank
     private String isbn;
 
-    @Past @NotNull
+    @Past
+    @NotNull
     private LocalDate dataPublicacao;
 
     public LivroRequest(String titulo, String isbn, LocalDate dataPublicacao) {
